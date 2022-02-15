@@ -1,8 +1,3 @@
-// cardinal-audio
-// blue-jay-audio
-// downy-audio
-// hawk-audio
-// hoodie-audio
 document.addEventListener("DOMContentLoaded", function(){
     const birdCall = document.createElement("AUDIO");
     const cardinal = document.getElementById("cardinal-audio");
