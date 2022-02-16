@@ -45,3 +45,10 @@ p {
 button {
   color: #2196f3
 }
+
+@media screen and (max-width: 600px) {
+  img {
+    height: 25vh;
+    width: 60vw;
+  }
+}
