@@ -26,9 +26,10 @@ figcaption {
 
 h3, h1, h2 {
   justify-content: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   align-items: center;
+  text-align: center;
   display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
@@ -47,8 +48,18 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  .background {
+    width: 80vw;
+  }
+
   img {
     height: 25vh;
     width: 60vw;
+
+  }
+
+  p {
+     width: 60vw;
   }
 }
+
