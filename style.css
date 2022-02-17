@@ -72,9 +72,9 @@ button {
   transition: 1.5s;
 }
 
-.sidebar a:hover {
+.sidebar a:hover, .sidebar a.active {
   color: #038eb9;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .material-icons,

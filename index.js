@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
         birdCall.play();
     });
 
+    activeSidebar()
 })
 
 var mini = true;
@@ -43,6 +44,34 @@ function toggleSidebar() {
   }
 }
 
+function activeSidebar() {
+    const anchors = document.querySelectorAll(".sidebar a")
+    window.addEventListener("scroll", function(){
+        anchors.forEach(function(anchor) {
+            console.log(anchor)
+            if (anchor.hash !== '#top') {
+                let section = document.querySelector(anchor.hash)
+                if (section.offsetTop - window.scrollY < 20) {
+                    anchor.classList.add("active")
+                    console.log(anchor)
+                }
+                else {
+                    anchor.classList.remove("active")
+                }
+            }
+            else if (anchor.hash === '#top') {
+                let section = document.querySelector('#bottom')
+                if (section.offsetTop - window.scrollY < 20) {
+                    anchor.classList.add("active")
+                    console.log(anchor)
+                }
+                else {
+                    anchor.classList.remove("active")
+                }
+            }
+        })    
 
+    })
+}
 
 
